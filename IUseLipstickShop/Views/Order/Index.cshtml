@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section jsFooter{
+    <script src="~/Content/js/CartControler.js"></script>
+}
+<h2>Index</h2>
+<div>
+    <h3 style="float:left; margin-left:30px;">$</h3>
+    <h3 class="all-money" style="float: left; margin-left: 10px;">-------</h3>
+</div>
+<br />
+<br />
+<br />
+<div>
+    <p>Phone</p>
+    <input class="Phone" type="number" style="border:1px solid black;height:20px;" />
+    <p>ADDRESS</p>
+    <input class="Address" type="text" style="border:1px solid black;height:20px;" />
+    <button style="background-color: #F5CFD1;height: 50px;width: 100px; margin-left: 5%; margin-top:1px; border-radius: 5px;" @*data-id="@User.Identity.Name"*@ class="done" type="submit">
+        DONE
+    </button>
+</div>
